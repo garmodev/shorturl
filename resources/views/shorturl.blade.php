@@ -181,6 +181,25 @@
         })
     </script>
 @endif
+@error('old_url')
+    <script>
+        const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-center',
+        showConfirmButton: false,
+        timer: 1500,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+        })
+        Toast.fire({
+        icon: 'error',
+        title: 'The site can not be reached'
+        })
+    </script>
+@enderror
     <script>
         function jsPaste(){
             navigator.clipboard.readText()
