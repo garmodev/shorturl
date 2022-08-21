@@ -121,6 +121,7 @@ class ShortURLController extends Controller
 
 
         );
+
         ShortURL::find($id)->update([
 
             'status' => $request->status,
