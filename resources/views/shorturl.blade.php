@@ -195,8 +195,8 @@
         }
         })
         Toast.fire({
-        icon: 'error',
-        title: 'The site can not be reached'
+        icon: 'info',
+        title: 'กรุณาป้อนข้อมูล'
         })
     </script>
 @enderror
