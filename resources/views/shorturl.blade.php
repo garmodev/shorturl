@@ -200,17 +200,7 @@
         })
     </script>
 @enderror
-    <script>
-        function jsPaste(){
-            navigator.clipboard.readText()
-            .then(txt =>{
-                document.getElementById("demo").value = txt;
-            })
-            .catch(err=>{
-                alert("No add");
-            });
-        }
-    </script>
+
     <script>
         function jsCopy(){
             var txt = document.getElementById('copy').value;

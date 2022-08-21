@@ -24,5 +24,15 @@
       });
   });
 
+  function jsPaste(){
+    navigator.clipboard.readText()
+    .then(txt =>{
+        document.getElementById("demo").value = txt;
+    })
+    .catch(err=>{
+        alert("No add");
+    });
+}
+
 
 
